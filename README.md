@@ -25,12 +25,16 @@ Formulário html POST com texto enviado do V3 no site => enviar.php => sendMessa
 ```                                                                  
 ## A interface
 
-Foi programado uma simples interface web PHP em um servidor LAMP hospedado em um antigo Raspberry Pi 2 com raspbian com a porta 80 aberta e ddns da no-ip para acesso em qualquer lugar. A página inicial home.php, possui os links para como se deseja fazer fetch no banco de dados mySQL, sendo subdividido em grupos, mensagens privadas e as últimas mensagens recebidas, sendo possível fácil customização com pouca edição de código.
+Foi programado uma simples interface web PHP em um servidor LAMP hospedado em um antigo Raspberry Pi 2 com raspbian com a porta 80 aberta e ddns da no-ip para acesso em qualquer lugar. 
+A página inicial home.php, possui os links para como se deseja fazer fetch no banco de dados mySQL, sendo subdividido em grupos, mensagens privadas e as últimas mensagens recebidas, sendo possível fácil customização com pouca edição de código. 
+Já a página principal.php executa o método da API getUpdates e atualiza o banco de dados com os dados a serem exibidos e processados
+A página enviar.php executa o método da API sendMessage no qual é responsável por enviar mensagens para telegram.
 ```
 home.php => privadas.php => exibe mensagens privadas
          => ultimas.php => exibe todas as mensagens
          => grupo1.php => exibe mensagens do grupo1 => formulario para enviar texto => envio.php => grupo1.php com a mensagem enviada
 principal.php => atualiza o banco de dados seja pelo cronjob ou pelo botão atualizar
+enviar.php => envia mensagens do navegador para o telegram
 ```
 
 ## Limitações
