@@ -36,7 +36,7 @@ A página enviar.php executa o método da API sendMessage no qual é responsáve
 ```
 home.php => privadas.php => exibe mensagens privadas
          => ultimas.php => exibe todas as mensagens
-         => grupo1.php => exibe mensagens do grupo1 => formulario para enviar texto => envio.php => grupo1.php com a mensagem enviada
+         => grupo1.php => exibe mensagens do grupo1 => formulario para enviar texto => enviar.php => grupo1.php com a mensagem enviada
 
 principal.php => atualiza o banco de dados seja pelo cronjob ou pelo botão atualizar
 enviar.php => envia mensagens do navegador para o telegram
