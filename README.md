@@ -30,9 +30,9 @@ Foi programado uma simples interface web PHP em um servidor LAMP hospedado em um
 
 A página inicial home.php, possui os links para como se deseja fazer fetch no banco de dados mySQL, sendo subdividido em grupos, mensagens privadas e as últimas mensagens recebidas, sendo possível fácil customização com pouca edição de código. 
 
-Já a página principal.php executa o método da API getUpdates e atualiza o banco de dados com os dados a serem exibidos e processados
+Já a página principal.php executa o método da API getUpdates e atualiza o banco de dados com os dados a serem exibidos e processados.
 
-A página enviar.php executa o método da API sendMessage no qual é responsável por enviar mensagens para telegram.
+A página enviar.php executa o método da API sendMessage no qual é responsável por enviar mensagens para o telegram.
 ```
 home.php => privadas.php => exibe mensagens privadas
          => ultimas.php => exibe todas as mensagens
