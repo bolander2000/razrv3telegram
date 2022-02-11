@@ -10,7 +10,7 @@ Apesar ter sido feito tendo em mente o motorola v3, com conexão 2G, esta interf
 
 ## Como funciona?
 
-Esta interface faz uso de um bot do telegram que possue a função de ler todas as mensagens recebidas, sejam em grupos ou chats privados, e que por meio do API do telegram cria uma estrutura de dados JSON contendo os dados da mensagem recebida. 
+Esta interface faz uso de um bot do telegram que possui a função de ler todas as mensagens recebidas, sejam em grupos ou chats privados, e que por meio do API do telegram cria uma estrutura de dados JSON contendo os dados da mensagem recebida. 
 Por meio do método ?getUpdates do API é possível executar pelo curl um requerimento GET e processar esses dados JSON em um servidor PHP.
 Para maior comodidade esses dados são armazenados em um banco de dados mySQL e em seguida são processados conforme as demandas do usuário.
 ```
