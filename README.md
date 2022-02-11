@@ -13,7 +13,7 @@ Esta interface faz uso de um bot do telegram que possue a função de ler todas 
 Por meio do método ?getUpdates do API é possível executar pelo curl um requerimento GET e processar esses dados JSON em um servidor PHP.
 Para maior comodidade esses dados são armazenados em um banco de dados mySQL e em seguida são processados conforme as demandas do usuário.
 ```
-Mensagem recebida no telegram => Telegram Bot do usuário => API Telegram => JSON => getUpdates => PHP JSON decode => mySQL => Mensagem é exibida no site
+Mensagem recebida no telegram => Telegram Bot do usuário => API Telegram => JSON => método getUpdates no principal.php => mySQL => Mensagem é exibida no site
 ```
 Para maior comodidade e evitar dar refresh em um celular com lenta conexão de internet, pode ser feito um "cron job" no servidor LAMP que executa a requerimento curl para ?getUpdates em um determinado período de tempo, assim, atualizando o banco de dados e o site automaticamente.
 
@@ -30,6 +30,7 @@ Foi programado uma simples interface web PHP em um servidor LAMP hospedado em um
 home.php => privadas.php => exibe mensagens privadas
          => ultimas.php => exibe todas as mensagens
          => grupo1.php => exibe mensagens do grupo1 => formulario para enviar texto => envio.php => grupo1.php com a mensagem enviada
+principal.php => atualiza o banco de dados seja pelo cronjob ou pelo botão atualizar
 ```
 
 ## Limitações
