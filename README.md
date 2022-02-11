@@ -4,7 +4,7 @@
 
 Este programa é uma interface web em PHP do aplicativo telegram feito para uso em um Motorola Razr V3 (2004), capaz de enviar e receber mensagens diretamente do browser do Motorola V3.
 
-Apesar ter sido feito tendo em mente o motorola v3, com conexão 2G, esta interface web é capaz de ser usado em qualquer celular com conexão a internet.
+Apesar ter sido feito tendo em mente o motorola v3, com conexão 2G, esta interface web é capaz de ser usado em qualquer celular com conexão à internet.
 
 ## Vídeo
 
