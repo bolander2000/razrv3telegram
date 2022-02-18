@@ -45,7 +45,7 @@ enviar.php => envia mensagens do navegador para o telegram
 ## Limitações
 
 - O bot do telegram não permite enviar mensagens privadas para contatos que nunca enviaram uma mensagem privada ao Bot, muitos bots se utilizam de /start para inicializar o bot, e assim descobrir o chat_ID necessário para envio, mas no caso de um bot que é usado para imitar um usuário, isso não funciona de maneira intuitiva, da mesma maneira que não é intuitivo o fato de uma pessoa estar tecnicamente conversando em privado com um bot ao invés de um usuário, o que já não tem o mesmo impacto quando o bot está em um grupo. Uma das maneiras de se superar tal limitação talvez seja redirecionar as mensagens recebidas de um usuário para o Bot, mas para fazer isso talvez seja necessário um servidor dedicado pra esse propósito, pois o API do telegram não tem suporte para isso.
-- O API do telegram permite envio de fotos, figurinhas e vídeos, mas levando em conta a lenta conexão 2G do RAZR V3, não faz sentido, usar desse mecanismo.
+- O API do telegram permite envio de fotos, figurinhas e vídeos, mas levando em conta a lenta conexão 2G do RAZR V3, não faz sentido usar desse mecanismo.
 - O browser J2ME do Motorola V3 não tem suporte para AJAX, logo não é possível atualizar a página sem recarregar.
 
 ## Melhorias Futuras
