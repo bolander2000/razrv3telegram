@@ -18,7 +18,7 @@ Para maior comodidade esses dados são armazenados em um banco de dados mySQL e 
 ```
 Mensagem recebida no telegram => Telegram Bot do usuário => API Telegram => JSON => método getUpdates no principal.php => mySQL => Mensagem é exibida no site
 ```
-Para maior comodidade e evitar dar refresh em um celular com lenta conexão de internet, pode ser feito um "cron job" no servidor LAMP que executa a requerimento curl para ?getUpdates em um determinado período de tempo, assim, atualizando o banco de dados e o site automaticamente.
+Para evitar dar refresh toda hora em um celular com lenta conexão de internet, pode ser feito um "cron job" no servidor LAMP que executa a requerimento curl para ?getUpdates em um determinado período de tempo, assim, atualizando o banco de dados e o site automaticamente.
 
 Para enviar mensagens, se faz uso do método da API do bot do telegram de nome ?sendMessage, no qual se pode enviar mensagens em grupos e chat privados.
 Para maior comodidade em um celular com digitação limitada, foi criado um formulário html com método post no mesmo lugar onde são exibidas as mensagens recebidas, esse formulário envia o texto com método POST para uma página php na qual é tratado os dados e armazenados no banco de dados mySQL e finalmente enviado para o API do telegram.
